@@ -1,0 +1,69 @@
+<html>
+	<body>
+<center>
+		<font size="+25">BOOK CLICKER</font>
+</center>
+<center>
+	<div>
+   			<img id="img1" src="maze.png" width="250" height="250" onclick="clicker.click();" style="display:none" />
+			<img id="img2" src="maze.png" width="250" height="250" onclick="redirect2();" style="display:block" />
+        </div style = "justify-content: center">
+</center>
+<center>	
+		<font size="+2">Number of Books: <span id="Books"></span></font><br>
+		Books Produced: <span id="Books_produced"></span><br><hr>
+
+		Clicker Level: <span id="clicker_level"></span><br>
+		Production: <span id="clicker_productivity"></span><br>
+		Improvement Price: <span id="clicker_price"></span><br>
+		<button style="display:none" id="button1" onclick="clicker.improve();">Improve</button>
+		<button style="display:block" id="button2" onclick="redirect();">Question 1</button>
+		<hr><br>
+		<span id="buildings"></span>
+
+		<script src="main.js"></script>
+</center>
+<script>
+	function redirect() {
+	if(Books_produced >= 0) {
+		window.open('file:///C:/Users/jonah/Desktop/redirect.html');
+		}
+		{
+  var contentId = document.getElementById("button1");
+
+  contentId.style.display == "block" ? contentId.style.display = "none" : 
+contentId.style.display = "block"; 
+}
+		{
+  var contentId = document.getElementById("button2");
+
+  contentId.style.display == "block" ? contentId.style.display = "none" : 
+contentId.style.display = "block"; 
+}
+}
+	function redirect2() {
+	if(Books_produced == 0) {
+			
+		window.open('file:///C:/Users/jonah/Desktop/redirect2.html');
+		}
+		{
+  var contentId = document.getElementById("img1");
+
+  contentId.style.display == "block" ? contentId.style.display = "none" : 
+contentId.style.display = "block"; 
+}
+		{
+  var contentId = document.getElementById("img2");
+
+  contentId.style.display == "block" ? contentId.style.display = "none" : 
+contentId.style.display = "block"; 
+}
+}
+</script>
+	</body>
+</html>
+
+
+
+
+need to answer questions about the book to progress in the game.
