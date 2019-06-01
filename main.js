@@ -267,4 +267,4 @@ setInterval(renew_Books, 500);
 	var time3 = setInterval(gay5, 500);
 	var time4 = setInterval(gay6, 500);
 	var time5 = setInterval(gay7, 500);
-	var time6 = setInterval(gay8, 500)
+	var time6 = setInterval(gay8, 500);
