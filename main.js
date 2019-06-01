@@ -35,7 +35,7 @@ class Clicker
 	{
 		if(Books >= this.price)
 		{
-			Books -= this.price;
+			Books -= round(this.price);
 			this.level += 1;
 			this.price *= 1.5;
 			this.renew_display();
