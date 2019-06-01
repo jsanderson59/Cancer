@@ -178,6 +178,63 @@ function renew_Books()
 		Book_gigant_enabled = 1;
 	}
 }
+	
+	function gay3() {
+	if(this.Books_produced >= 50 && button3.style.display == "none")
+	{
+		{
+		button3.style.display == "inline-block" ? button3.style.display = "none" : 
+button3.style.display = "inline-block";
+		}
+	}
+	}
+	function gay4() {
+	if(this.Books_produced >= 250 && button4.style.display == "none")
+	{
+		{
+		button4.style.display == "inline-block" ? button4.style.display = "none" : 
+button4.style.display = "inline-block";
+		}
+	}
+	}
+	function gay5() {
+	if(this.Books_produced >= 500 && button5.style.display == "none")
+	{
+		{
+		button5.style.display == "inline-block" ? button5.style.display = "none" : 
+button5.style.display = "inline-block";
+		}
+	}
+	}
+	function gay6() {
+	if(this.Books_produced >= 1000 && button6.style.display == "none")
+	{
+		{
+		button6.style.display == "inline-block" ? button6.style.display = "none" : 
+button6.style.display = "inline-block";
+		}
+	}
+	}
+	function gay7() {
+	if(this.Books_produced >= 1500 && button7.style.display == "none")
+	{
+		{
+		button7.style.display == "inline-block" ? button7.style.display = "none" : 
+button7.style.display = "inline-block";
+		}
+	}
+	}
+	function gay8() {
+	if(this.Books_produced >= 2500 && button8.style.display == "none")
+	{
+		{
+		button8.style.display == "inline-block" ? button8.style.display = "none" : 
+button8.style.display = "inline-block";
+		}
+		
+	}
+	}
+
 
 
 // commands and (global) variables
@@ -205,3 +262,9 @@ Book_tesla = new Building("Book Tesla", 1000, 10000);
 Book_gigant = new Building("Book Gigant", 10000, 100000);
 
 setInterval(renew_Books, 500);
+	var time1 = setInterval(gay3, 500);
+	var time2 = setInterval(gay4, 500);
+	var time3 = setInterval(gay5, 500);
+	var time4 = setInterval(gay6, 500);
+	var time5 = setInterval(gay7, 500);
+	var time6 = setInterval(gay8, 500);
