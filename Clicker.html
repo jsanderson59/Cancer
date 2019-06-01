@@ -9,6 +9,16 @@
 			<img id="img2" src="mazelocked.png" width="250" height="250" onclick="redirect();" style="display:block" />
         </div style = "justify-content: center">
 </center>
+	<br>
+		<center>
+			<button style="display:none" id="button3" onclick="question();">10 books</button>
+			<button style="display:none" id="button4" onclick="question1();">20 books</button>
+			<button style="display:none" id="button5" onclick="question2();">40 books</button>
+			<button style="display:none" id="button6" onclick="question3();">80 books</button>
+			<button style="display:none" id="button7" onclick="question4();">160 books</button>
+			<button style="display:none" id="button8" onclick="question5();">320 books</button>
+		</center>
+	<br>
 <center>	
 		<font size="+2">Number of Books: <span id="Books"></span></font><br>
 		Books Produced: <span id="Books_produced"></span><br><hr>
@@ -59,11 +69,98 @@ contentId.style.display = "block";
 contentId.style.display = "block"; 
 }
 }
+		function question() {
+	if(Books_produced >= 0) {
+		Books += 10;
+		Books_produced += 10;
+	}
+		{
+		window.open('https://jsanderson59.github.io/Cancer/question.html');
+		}
+		{
+		button3.style.display == "inline-block" ? button3.style.display = "none" : 
+button3.style.display = "inline-block";
+		}
+		{clearInterval(time1)
+		}
+		}
+		function question1() {
+	if(Books_produced >= 0) {
+		Books += 20;
+		Books_produced += 20;
+	}
+		{
+		window.open('https://jsanderson59.github.io/Cancer/question1.html');
+		}
+		{
+		button4.style.display == "inline-block" ? button4.style.display = "none" : 
+button4.style.display = "inline-block";
+		}
+		{clearInterval(time2)
+		}
+		}
+		function question2() {
+	if(Books_produced >= 0) {
+		Books += 40;
+		Books_produced += 40;
+	}
+		{
+		window.open('https://jsanderson59.github.io/Cancer/question2.html');
+		}
+		{
+		button5.style.display == "inline-block" ? button5.style.display = "none" : 
+button5.style.display = "inline-block";
+		}
+		{clearInterval(time3)
+		}
+		}
+		function question3() {
+	if(Books_produced >= 0) {
+		Books += 80;
+		Books_produced += 80;
+	}
+		{
+		window.open('https://jsanderson59.github.io/Cancer/question3.html');
+		}
+		{
+		button6.style.display == "inline-block" ? button6.style.display = "none" : 
+button6.style.display = "inline-block";
+		}
+		{clearInterval(time4)
+		}
+		}
+		function question4() {
+	if(Books_produced >= 0) {
+		Books += 160;
+		Books_produced += 160;
+	}
+		{
+		window.open('https://jsanderson59.github.io/Cancer/question4.html');
+		}
+		{
+		button7.style.display == "inline-block" ? button7.style.display = "none" : 
+button7.style.display = "inline-block";
+		}
+		{clearInterval(time5)
+		}
+		}
+		function question5() {
+	if(Books_produced >= 0) {
+		Books += 320;
+		Books_produced += 320;
+	}
+		{
+		window.open('https://jsanderson59.github.io/Cancer/question5.html');
+		}
+		{
+		button8.style.display == "inline-block" ? button8.style.display = "none" : 
+button8.style.display = "inline-block";
+		}
+		{clearInterval(time6)
+		}
+		}
+		
+	
 </script>
 	</body>
 </html>
-
-
-
-
-need to answer questions about the book to progress in the game.
