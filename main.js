@@ -35,7 +35,7 @@ class Clicker
 	{
 		if(Books >= this.price)
 		{
-			Books -= round(this.price);
+			Books -= Math.round(this.price);
 			this.level += 1;
 			this.price *= 1.5;
 			this.renew_display();
@@ -49,7 +49,7 @@ class Clicker
 	renew_display()
 	{
 		this.level_display.innerHTML = this.level;
-		this.price_display.innerHTML = round(this.price);
+		this.price_display.innerHTML = Math.round(this.price);
 		this.productivity_display.innerHTML = this.get_production_value();
 	}
 }
