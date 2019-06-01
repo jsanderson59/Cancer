@@ -37,7 +37,7 @@ class Clicker
 		{
 			Books -= this.price;
 			this.level += 1;
-			this.price *= 1.5;
+			this.price *= 2;
 			this.renew_display();
 		}
 		else
