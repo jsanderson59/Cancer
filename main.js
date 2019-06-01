@@ -49,7 +49,7 @@ class Clicker
 	renew_display()
 	{
 		this.level_display.innerHTML = this.level;
-		this.price_display.innerHTML = this.price;
+		this.price_display.innerHTML = round(this.price);
 		this.productivity_display.innerHTML = this.get_production_value();
 	}
 }
@@ -60,7 +60,7 @@ class Building
 	{
 		this.name = name;
 		this.level = 0;
-		this.price = price;
+		this.price = round(price);
 		this.productivity = productivity;
 
 		// variables for displaying
@@ -103,14 +103,14 @@ class Building
 	
 	get_price() 
 	{
-		return (this.price / 2) * (this.level * this.level + 1) + (this.price / 2) * (this.level + 1)
+		round(return (this.price / 2) * (this.level * this.level + 1) + (this.price / 2) * (this.level + 1))
 	}
 	
 	improve()
 	{
         	if(Books >= this.get_price())
         	{
-        		Books -= this.get_price();
+        		Books -= round(this.get_price());
         		this.level += 1;
         		altogether_productivity += this.productivity;
         		this.renew_display();
