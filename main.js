@@ -206,34 +206,6 @@ button5.style.display = "inline-block";
 		}
 	}
 	}
-	function gay6() {
-	if(this.Books_produced >= 1000 && button6.style.display == "none")
-	{
-		{
-		button6.style.display == "inline-block" ? button6.style.display = "none" : 
-button6.style.display = "inline-block";
-		}
-	}
-	}
-	function gay7() {
-	if(this.Books_produced >= 1500 && button7.style.display == "none")
-	{
-		{
-		button7.style.display == "inline-block" ? button7.style.display = "none" : 
-button7.style.display = "inline-block";
-		}
-	}
-	}
-	function gay8() {
-	if(this.Books_produced >= 2500 && button8.style.display == "none")
-	{
-		{
-		button8.style.display == "inline-block" ? button8.style.display = "none" : 
-button8.style.display = "inline-block";
-		}
-		
-	}
-	}
 
 
 
@@ -265,7 +237,3 @@ setInterval(renew_Books, 500);
 	var time1 = setInterval(gay3, 500);
 	var time2 = setInterval(gay4, 500);
 	var time3 = setInterval(gay5, 500);
-	var time4 = setInterval(gay6, 500);
-	var time5 = setInterval(gay7, 500);
-	var time6 = setInterval(gay8, 500);
-	
