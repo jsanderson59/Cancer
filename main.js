@@ -9,7 +9,7 @@ class Clicker
 	constructor()
 	{
 		this.level = 1
-		this.price = 20;
+		this.price = 10;
 
 		this.level_display = document.getElementById("clicker_level");
 		this.price_display = document.getElementById("clicker_price");
@@ -37,7 +37,7 @@ class Clicker
 		{
 			Books -= this.price;
 			this.level += 1;
-			this.price *= 2;
+			this.price *= 1.5;
 			this.renew_display();
 		}
 		else
@@ -155,41 +155,29 @@ function renew_Books()
 	Books_display.innerHTML = Books;
 	Books_produced_display.innerHTML = Books_produced;
     
-	if(this.Books_produced >= 200 && bakery_enabled == 0) 
+	if(this.Books_produced >= 100 && bakery_enabled == 0) 
 	{
 		bakery.set_visible();
 		bakery_enabled = 1;
         
 	}
-	if(this.Books_produced >= 2000 && factory_enabled == 0)
+	if(this.Books_produced >= 1000 && factory_enabled == 0)
 	{
 		factory.set_visible(); 
 		factory_enabled = 1;
 	}
-	if(this.Books_produced >= 20000 && Book_tesla_enabled == 0)
+	if(this.Books_produced >= 10000 && Book_tesla_enabled == 0)
 	{
 		Book_tesla.set_visible();
 		Book_tesla_enabled = 1;
 	}
 
-	if(this.Books_produced >= 200000 && Book_gigant_enabled == 0) 
+	if(this.Books_produced >= 100000 && Book_gigant_enabled == 0) 
 	{
 		Book_gigant.set_visible(); 
 		Book_gigant_enabled = 1;
 	}
 }
-
-function save()
-{
-  store.set('Books_produced', JSON.stringify(Books_produced));
-  store.set('Books', JSON.stringify(Books));
-}
-function load()
-{
-  Books_produced = store.get('Books_produced');
-  Books = store.get('Books');
-}
-
 
 
 // commands and (global) variables
@@ -209,11 +197,11 @@ Book_tesla_enabled = 0;
 Book_gigant_enabled = 0;
 
 clicker = new Clicker();
-baker = new Building("Author", 1, 20);
+baker = new Building("Author", 1, 10);
 baker.set_visible();
-bakery = new Building("Bakery", 10, 200);
-factory = new Building("Factory", 100, 2000);
-Book_tesla = new Building("Book Tesla", 1000, 20000);
-Book_gigant = new Building("Book Gigant", 10000, 200000);
+bakery = new Building("Book Club", 10, 100);
+factory = new Building("Book Factory", 100, 1000);
+Book_tesla = new Building("Book Tesla", 1000, 10000);
+Book_gigant = new Building("Book Gigant", 10000, 100000);
 
 setInterval(renew_Books, 500);
